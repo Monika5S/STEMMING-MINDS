@@ -1,6 +1,6 @@
 # cfg_interactive_website_challenge
 
-## green team
+# Green team
 
 
 ## Contributors ✍🏼
