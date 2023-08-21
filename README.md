@@ -5,7 +5,6 @@
 
 ## Contributors ✍🏼
 
----
 * [Androulla](https://github.com/n1ght0wl) 
 * [Monica](https://github.com/Monika5S)
 * [Teresa](https://github.com/teresafdm)
