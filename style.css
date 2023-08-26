@@ -1,0 +1,80 @@
+h1{
+    color: rgb(28, 39, 54);
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
+
+h5 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+.bodyText{
+    color: rgb(28, 39, 54);
+}
+
+
+.customButton{
+    font-size: 30px;
+    --bs-btn-padding-x: 35px
+}
+
+.dotRed {
+    height: 25px;
+    width: 25px;
+    background-color: #ff7978;
+    box-shadow: 0 0 5px #ff7978, 0 0 10px #ff7978, 0 0 15px #ff7978;
+    border-radius: 50%;
+    display: inline-block;
+    margin: auto; /* this centres the dot horizontally */
+  }
+
+.dotPurple {
+    height: 25px;
+    width: 25px;
+    background-color: #5d54a3;
+    box-shadow: 0 0 5px #5d54a3, 0 0 10px #5d54a3, 0 0 15px #5d54a3;
+    border-radius: 50%;
+    display: inline-block;
+    margin: auto;
+}
+
+.dotGreen {
+    height: 25px;
+    width: 25px;
+    background-color: #77e2b4;
+    box-shadow: 0 0 5px #77e2b4, 0 0 10px #77e2b4, 0 0 15px #77e2b4;
+    border-radius: 50%;
+    display: inline-block;
+    margin: auto;
+}
+
+.dotOrange {
+    height: 25px;
+    width: 25px;
+    background-color: #f4ac38;
+    box-shadow: 0 0 5px #f4ac38, 0 0 10px #f4ac38, 0 0 15px #f4ac38;
+    border-radius: 50%;
+    display: inline-block;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(28, 39, 54);
+}
+
+.topicText {
+    font-family: "Roboto", sans-serif;
+}
+
+footer {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: rgb(28, 39, 54);
+    color: white;
+}
+
+.footerLink {
+    color: white;
+}
