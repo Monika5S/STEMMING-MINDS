@@ -2,6 +2,8 @@
 
 # Green team
 
+View active site: https://n1ght0wl.github.io/cfg_interactive_website_challenge/
+
 
 ## Contributors ✍🏼
 
