@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stemming Minds</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- special font -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- nav bar -->
+    <nav class="navbar bg-body-tertiary">
+      <div class="container">
+        <!-- Stemming Minds logo -->
+        <a class="navbar-brand" href="/index.html">
+          <img src="/img/logo.png" alt="Stemming Minds logo" height="45" />
+        </a>
+        <!-- hamburger menu -->
+        <button
+          class="navbar-toggler ms-auto"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#n_bar"
+          aria-controls="navbarNavAltMarkup"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="n_bar">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#personalise">Personalise</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#topics">Topics</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#quiz">Quiz</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#getInspired">Get Inspired</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <br />
+
+    <div class="container p-5">
+      <div class="row bg-body-tertiary rounded">
+        <img
+          src="/img/fractal02.jpg"
+          alt="fractal image"
+          class="col col-md-4 image-fluid w-25 p-0 border border-3 rounded"
+        />
+
+        <div class="col p-5 text-center fact">
+          <h3 class="fs-2">⚛️ fact of the day</h3>
+          <img
+            src="/img/wave-red.png"
+            class="img-fluid"
+            alt="wavy line"
+            width="360"
+          />
+          <br />
+          <br />
+          <p id="newfact"></p>
+        </div>
+      </div>
+
+      <!-- learning resource -->
+      <div class="row resources mt-5 pt-5 pb-5">
+        <div class="col-xs-12 col-md-4 pb-5 bodyText align-self-center">
+          <h3>📍<span id="subject"></span></h3>
+
+          <h2 class="pt-3 fs-1">Learning Resources</h2>
+        </div>
+        <div class="col-xs-12 col-md-3 align-self-center">
+          🌟
+          <img
+            src="/img/wave-green.png"
+            alt="line Wave design"
+            class="img-fluid"
+          />
+        </div>
+
+        <div class="col-md p-4 resources">
+          <div class="row text-white text-center">
+            <div class="col-6 p-5 bg-info-subtle text-black rounded">
+              <h4 class="resource fs-1">
+                📌 <br />
+                STEM Articles
+              </h4>
+              <a href="" target="_blank" id="articles"
+                ><button class="btn btn-light px-4 py-2 fs-4 mt-5 mb-2">
+                  Read
+                </button></a
+              >
+            </div>
+            <div class="col-6 p-5 bg-secondary rounded">
+              <h4 class="resource fs-1">
+                🧑‍💻 <br />
+                STEM Courses
+              </h4>
+              <a href="" id="courses" target="_blank">
+                <button class="btn btn-light px-4 py-2 fs-4 mt-5 mb-2">
+                  Watch
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- knowledge quiz section -->
+      <div class="row pt-5 align-items-center">
+        <!-- responsive columns: small screen 1 column, mid screen and up three columns -->
+        <div class="col-xs-12 col-md-6 bodyText">
+          <h3 class="fs-1">
+            have fun and put<br />
+            your knowledge to test
+          </h3>
+        </div>
+        <div class="col-xs-12 col-md-2">
+          <img src="/img/wave-green.png" class="img-fluid" alt="wavy line" />
+        </div>
+        <div class="col-xs-12 col-md-4 d-flex justify-content-center">
+          <br />
+          <button
+            type="button"
+            href="#"
+            class="btn btn-danger btn-lg customButton mt-5 mb-5"
+          >
+            TAKE A QUIZ
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <br /><br /><br />
+
+    <footer>
+      <div class="container text-justify">
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              src="/img/logo-white.png"
+              alt="Stemming Minds logo"
+              height="45"
+            />
+          </div>
+          <div class="col-md-3">
+            <p><a class="footerLink" href="#">About us</a></p>
+            <p><a class="footerLink" href="#">Contact us</a></p>
+            <p><a class="footerLink" href="#">Accessibility</a></p>
+          </div>
+          <div class="col-md-3">
+            <p>Authors:</p>
+            <p>Androulla, Grace, Monika & Teresa</p>
+            <p>CODE FIRST GIRLS ♥</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./learn.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,20 +1,30 @@
-h1{
-    color: rgb(28, 39, 54);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Roboto", sans-serif;
+}
+
+
+h1,
+h2,
+h3 {
+    color: rgb(28, 39, 54);
     font-weight: 700;
 }
 
 h5 {
-    font-family: "Roboto", sans-serif;
     font-weight: 500;
 }
 
-.bodyText{
+.bodyText {
     color: rgb(28, 39, 54);
 }
 
 
-.customButton{
+.customButton {
     font-size: 30px;
     --bs-btn-padding-x: 35px
 }
@@ -26,8 +36,9 @@ h5 {
     box-shadow: 0 0 5px #ff7978, 0 0 10px #ff7978, 0 0 15px #ff7978;
     border-radius: 50%;
     display: inline-block;
-    margin: auto; /* this centres the dot horizontally */
-  }
+    margin: auto;
+    /* this centres the dot horizontally */
+}
 
 .dotPurple {
     height: 25px;
@@ -66,6 +77,10 @@ a {
 
 .topicText {
     font-family: "Roboto", sans-serif;
+}
+
+.resource {
+    font-family: 'Pacifico', cursive;
 }
 
 footer {
