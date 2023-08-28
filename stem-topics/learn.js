@@ -71,7 +71,10 @@ var facts = {
 };
 
 let subject_heading = document.querySelector("#subject");
-let subject = localStorage.getItem("subject_name");
+let subject = "maths";
+if (window) {
+  subject = localStorage.getItem("subject_name");
+}
 subject_heading.innerHTML = subject.toUpperCase();
 findFacts(subject);
 setResources(subject);

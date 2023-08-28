@@ -1,5 +1,7 @@
 function SetTopic(subject) {
   //   alert(subject);
-  localStorage.clear();
-  localStorage.setItem("subject_name", subject);
+  if (window) {
+    localStorage.clear();
+    localStorage.setItem("subject_name", subject);
+  }
 }
