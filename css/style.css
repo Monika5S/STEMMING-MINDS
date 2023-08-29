@@ -23,11 +23,35 @@ h5 {
     color: rgb(28, 39, 54);
 }
 
+/* screen smaller than 768px reduces the width of below element by half */
+@media screen and (max-width: 768px) {
+    .waveGreen {
+      width: 50%;
+      margin: auto;
+      margin-top: 10px;
+    }
+  }
+
 
 .customButton {
+    margin-top: 20px;
     font-size: 30px;
     --bs-btn-padding-x: 35px
 }
+
+/* screen smaller than 768px hides the below element */
+@media screen and (max-width: 768px) {
+    .stackWide {
+      display: none;
+    }
+  }
+
+/* screen wider than 767px hides the below element */
+@media screen and (min-width: 767px) {
+    .stackNarrow {
+      display: none;
+    }
+  }
 
 .dotRed {
     height: 25px;
