@@ -1,3 +1,35 @@
+function shuffleChoices(choices) {
+  for (let index = 0; index < choices.length; index++) {
+    const swap_index = Math.floor(Math.random() * choices.length);
+    [choices[index], choices[swap_index]] = [
+      choices[swap_index],
+      choices[index],
+    ]; // Swap elements
+  }
+  return choices;
+}
+
+function setScore() {
+  let new_score = document.querySelector("#score");
+  new_score.innerHTML = user_score;
+}
+
+// to check answers and update score
+function findScore(choice) {
+  let answer = quiz[question_index].answer;
+
+  if (choice.innerHTML === answer) {
+    user_score += 1;
+    choice.style.background = "teal";
+    setScore();
+  } else {
+    choice.style.background = "coral";
+  }
+
+  correct_answer.innerHTML = `<strong>Correct Answer is : ${answer}</strong>`;
+  nextButton.disabled = false;
+}
+
 // to display quiz questions and options
 function displayQuestion() {
   let question_container = document.querySelector("#question");
@@ -5,33 +37,18 @@ function displayQuestion() {
   question_container.innerHTML = quiz[question_index].question;
   choice_container.innerHTML = "";
 
-  quiz[question_index].choices.forEach((choice) => {
+  let choice_list = shuffleChoices(quiz[question_index].choices);
+  choice_list.forEach((choice) => {
     const choiceItem = document.createElement("p");
     choiceItem.innerHTML = choice;
     choiceItem.addEventListener("click", (event) => {
-      checkScore(event.target.innerHTML);
-      choiceItem.style.background = "teal";
+      findScore(event.target);
     });
     choice_container.appendChild(choiceItem);
   });
+
   nextButton.disabled = true;
   correct_answer.innerHTML = "";
-}
-
-// to check answers and update score
-function checkScore(choice) {
-  let answer = quiz[question_index].answer;
-  if (choice === answer) {
-    user_score += 1;
-    setScore();
-  }
-  correct_answer.innerHTML = `<strong>Correct Answer is : ${answer}</strong>`;
-  nextButton.disabled = false;
-}
-
-function setScore() {
-  let new_score = document.querySelector("#score");
-  new_score.innerHTML = user_score;
 }
 
 //to add quiz questions to the quiz object
@@ -97,6 +114,7 @@ nextButton.addEventListener("click", () => {
     question_index++;
     displayQuestion();
   } else {
+    question_index = 0;
     alert("🧑‍💻This Quiz is completed. Try new Quiz!!! 🌟");
   }
 });
