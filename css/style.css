@@ -1,3 +1,14 @@
+
+/* fixed navigation */
+#home,
+#personalise,
+#topics,
+#quiz,
+#getInspired {
+  padding-top: 80px; 
+}
+
+
 h1,
 h2,
 h3,
