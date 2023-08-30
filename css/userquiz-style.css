@@ -1,0 +1,57 @@
+body {
+    background-color: #b6aef1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Roboto", sans-serif;
+}
+
+
+h1,
+h2,
+h3 {
+    color: rgb(28, 39, 54);
+    font-weight: 700;
+}
+
+h5 {
+    font-weight: 500;
+}
+
+.question {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: rgb(28, 39, 54);
+}
+
+.centredForm {
+    margin: auto;
+    width: 50%;
+    background-color: ghostwhite;
+    padding: 32px;
+    border-radius: 16px;
+    text-align: left!important;
+}
+
+/* screen smaller than 900px increases the width of below element to 80% */
+@media screen and (max-width: 900px) {
+    .centredForm {
+      width: 80%;
+    }
+  }
+
+/* screen smaller than 500px increases the width of below element to 95% */
+@media screen and (max-width: 500px) {
+    .centredForm {
+      width: 95%;
+    }
+  }
+
+input[type="radio"] {
+    margin-right: 10px;
+  }
